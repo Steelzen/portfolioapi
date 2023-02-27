@@ -9,3 +9,13 @@ class AboutMe(models.Model):
     
     def __str__(self):
         return self.name
+
+class Project(models.Model):
+    name = models.CharField(max_length=50)
+    content = models.CharField(max_length=300)
+    img_src = models.URLField(max_length=300, default="")
+    site_link = models.URLField(max_length=300, default="")
+    code_link = models.URLField(max_length=300, default="")
+    
+    def __str__(self):
+        return self.name      
