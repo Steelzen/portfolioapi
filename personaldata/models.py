@@ -5,7 +5,13 @@ class AboutMe(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone = models.CharField(max_length=30)
+    site = models.URLField(max_length=300, default="")
+    github = models.URLField(max_length=300, default="")
     summary = models.CharField(max_length=300)
+    photo_src = models.URLField(max_length=300, default="")
+    introductory = models.CharField(max_length=300, default="")
+    title_img_src = models.URLField(max_length=300, default="")
+
     
     def __str__(self):
         return self.name

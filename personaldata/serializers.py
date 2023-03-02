@@ -5,7 +5,7 @@ class AboutMeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutMe
-        fields = ['pk', 'name', 'email', 'phone', 'summary']
+        fields = '__all__'
 
 
 class ProjectSerializer(serializers.ModelSerializer):
