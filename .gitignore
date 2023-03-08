@@ -19,5 +19,3 @@ venv/
 
 # pycharm
 .idea/
-
-/portfolioapi/settings.py
