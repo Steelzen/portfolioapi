@@ -71,7 +71,10 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"]
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    'https://radiant-shore-88460.herokuapp.com/',
+    'http://localhost:3000'
+]
 
 TEMPLATES = [
     {
