@@ -74,6 +74,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = [
     'https://radiant-shore-88460.herokuapp.com',
     'https://www.steelzen.me',
+    'http://www.steelzen.me',
     'http://localhost:3000'
 ]
 
